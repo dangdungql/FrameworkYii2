@@ -65,7 +65,7 @@ $config = array(
 	| without final / (DON'T TOUCH)
 	|
 	*/
-	'base_url' => ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http"). "://". @$_SERVER['HTTP_HOST'].'/yiidemo',
+	'base_url' => ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http"). "://". @$_SERVER['HTTP_HOST'].str_replace('/file/dialog.php', '', $_SERVER['PHP_SELF']),
 	/*
 	|--------------------------------------------------------------------------
 	| path from base_url to base of upload folder

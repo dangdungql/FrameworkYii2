@@ -22,6 +22,16 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <?php
+        $host='http://'.$_SERVER['HTTP_HOST'].'/';
+        $homeUrl=str_replace('/backend/web', '', Yii::$app->urlManager->baseUrl); 
+    ?>
+    <script type="text/javascript">
+        function homeUrl(){
+            return '<?php echo $host.$homeUrl; ?>'
+        };
+        //alert(homeUrl());
+    </script>
 </head>
 <body>
 <?php $this->beginBody() ?>

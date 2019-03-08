@@ -18,35 +18,35 @@
         relative_urls: false, 
         remove_script_host : false,
   //       filemanager_title:"Media Manager",	
-		// external_filemanager_path: homeUrl()+"/file/",
-		// external_plugins: { "filemanager" : homeUrl()+"/file/plugin.min.js"},
+		external_filemanager_path: homeUrl()+"/file/",
+		external_plugins: { "filemanager" : homeUrl()+ "/file/plugin.min.js"},
   //   	filemanager_access_key:csrf(),
     });
 
-	tinymce.init({
-		 selector: 'textarea#desc',
-		 toolbar_items_size: 'small',
-		 height: 250,
-		 width:"",
-		 menubar: false,
-		 plugins: [
-			"advlist autolink lists link image charmap print preview hr anchor pagebreak",
-			"searchreplace wordcount visualblocks visualchars fullscreen",
-			"insertdatetime media nonbreaking save table contextmenu directionality",
-			"emoticons template paste textcolor colorpicker textpattern imagetools code fullscreen"
-		],
-		toolbar1: "undo redo bold italic underline | alignleft aligncenter alignright alignjustify bullist numlist outdent indent blockquote link unlink anchor image media | preview | forecolor backcolor fullscreen code",
-		image_advtab: true,
-		menubar: false,
-		toolbar_items_size: 'small',
-        relative_urls: false,
-        remove_script_host : false,
- 		filemanager_title:"Media Manager",	
-		external_filemanager_path: homeUrl()+"/file/",
-		external_plugins: { "filemanager" : homeUrl()+"/file/plugin.min.js"},
-    	filemanager_access_key:csrf(),
+	// tinymce.init({
+	// 	 selector: 'textarea#desc',
+	// 	 toolbar_items_size: 'small',
+	// 	 height: 250,
+	// 	 width:"",
+	// 	 menubar: false,
+	// 	 plugins: [
+	// 		"advlist autolink lists link image charmap print preview hr anchor pagebreak",
+	// 		"searchreplace wordcount visualblocks visualchars fullscreen",
+	// 		"insertdatetime media nonbreaking save table contextmenu directionality",
+	// 		"emoticons template paste textcolor colorpicker textpattern imagetools code fullscreen"
+	// 	],
+	// 	toolbar1: "undo redo bold italic underline | alignleft aligncenter alignright alignjustify bullist numlist outdent indent blockquote link unlink anchor image media | preview | forecolor backcolor fullscreen code",
+	// 	image_advtab: true,
+	// 	menubar: false,
+	// 	toolbar_items_size: 'small',
+ //        relative_urls: false,
+ //        remove_script_host : false,
+ // 		filemanager_title:"Media Manager",	
+	// 	external_filemanager_path: homeUrl()+"/file/",
+	// 	external_plugins: { "filemanager" : homeUrl()+"/file/plugin.min.js"},
+ //    	filemanager_access_key:csrf(),
 
-	});
+	// });
 // tinymce.init({
 //   selector: 'textarea#content',
 //   height: 300,
